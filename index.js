@@ -1,4 +1,5 @@
 const express = require("express")
+<<<<<<< HEAD
 const { engine } = require("express-handlebars")
 const bodyParser = require('body-parser')
 const path = require("path")
@@ -19,4 +20,15 @@ app.use("/", routes)
 
 app.listen(3000, () => {
     console.log('Servidor rodando http://localhost:3000')
+=======
+
+const app = express()
+
+app.use("/", (req, res) => {
+    res.send("<h1>Funcionou</h1>")
+})
+
+app.listen(3000, () => {
+    console.log('Servidor rodando em http://localhost:3000')
+>>>>>>> a575acc (commit inicial)
 })
