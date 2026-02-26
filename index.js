@@ -1,5 +1,6 @@
 const express = require("express")
 <<<<<<< HEAD
+<<<<<<< HEAD
 const { engine } = require("express-handlebars")
 const bodyParser = require('body-parser')
 const path = require("path")
@@ -21,11 +22,28 @@ app.use("/", routes)
 app.listen(3000, () => {
     console.log('Servidor rodando http://localhost:3000')
 =======
+=======
+const { engine } = require("express-handlebars")
+const bodyParser = require('body-parser')
+>>>>>>> 213df6e (atualizando código)
 
 const app = express()
 
-app.use("/", (req, res) => {
-    res.send("<h1>Funcionou</h1>")
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.json())
+
+app.engine('handlebars', engine({ defaultLayout: 'main' }))
+app.set('view engine', 'handlebars')
+
+app.get("/", (req, res) => {
+    res.render('index')
+})
+
+app.get("/sobre/{:id}", (req, res) => {
+
+    const id = req.params.id
+    
+    res.render("sobre", { id })
 })
 
 app.listen(3000, () => {
