@@ -15,10 +15,6 @@ app.set('view engine', 'handlebars')
 app.use(express.static(path.join(__dirname, 'views/css/')))
 app.use(express.static(path.join(__dirname, 'views/js/')))
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ae4fcb7 (aula 16-03)
 app.use("/", routes)
 
 app.listen(3000, () => {
