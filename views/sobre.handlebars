@@ -1,5 +1,11 @@
-<h1>Página Sobre</h1>
+<h1>PAGINA SOBRE</h1>
 
-<p>ID: {{id}}</p>
+<h3 style="color: blue;">
+    O ID DIGITADO É
+</h3>
 
-<a href="/">Voltar</a>
+{{#if id}}
+    <p style="color: red; font-size: 50px;">{{id}}</p>
+{{else}}
+    <p style="color: black; font-size: 50px;">NÃO TEM ID</p>
+{{/if}}
