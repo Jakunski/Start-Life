@@ -8,10 +8,10 @@ app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 app.set('views', './views')
 
-app.use(express.static('public'))
+app.use(express.static('Public'))
 
 app.use('/', routes)
 
-app.listen(3000, () => {
-  console.log('Servidor rodando em http://localhost:3000')
+app.listen(5000, '0.0.0.0', () => {
+  console.log('Servidor rodando em http://0.0.0.0:5000')
 })

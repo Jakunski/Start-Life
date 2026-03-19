@@ -1,11 +1,8 @@
-<h1>PAGINA SOBRE</h1>
-
-<h3 style="color: blue;">
-    O ID DIGITADO É
-</h3>
+<h1>Página Sobre</h1>
+<h3>O ID digitado é:</h3>
 
 {{#if id}}
-    <p style="color: red; font-size: 50px;">{{id}}</p>
+    <p class="id-display">{{id}}</p>
 {{else}}
-    <p style="color: black; font-size: 50px;">NÃO TEM ID</p>
+    <p class="no-id">Nenhum ID informado</p>
 {{/if}}
