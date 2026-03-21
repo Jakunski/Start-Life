@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
 }
 
+
 .page-wrapper {
     animation: fadeIn 0.5s ease forwards;
     padding: 40px 60px;
@@ -21,6 +22,7 @@ body {
     to   { opacity: 1; transform: translateY(0); }
 }
 
+
 body.fade-out .page-wrapper {
     animation: fadeOut 0.4s ease forwards;
 }
@@ -29,6 +31,7 @@ body.fade-out .page-wrapper {
     from { opacity: 1; transform: translateY(0); }
     to   { opacity: 0; transform: translateY(-20px); }
 }
+
 
 nav {
     display: flex;
@@ -77,6 +80,7 @@ nav .brand {
     margin-right: auto;
 }
 
+
 h1 {
     font-size: 2.2rem;
     color: #c8b8ff;
@@ -95,6 +99,7 @@ h3 {
     margin-bottom: 8px;
 }
 
+
 p {
     line-height: 1.7;
     color: #c0c0e0;
@@ -111,6 +116,7 @@ a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
+
 
 .btn {
     display: inline-block;
@@ -129,6 +135,7 @@ a:hover {
     transform: scale(1.04);
     text-decoration: none;
 }
+
 
 .id-display {
     font-size: 3rem;
