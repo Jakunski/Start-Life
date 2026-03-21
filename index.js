@@ -12,6 +12,6 @@ app.use(express.static('Public'))
 
 app.use('/', routes)
 
-app.listen(5000, '0.0.0.0', () => {
-  console.log('Servidor rodando em http://0.0.0.0:5000')
+app.listen(3000, () => {
+    console.log('Servidor rodando http://localhost:3000')
 })
