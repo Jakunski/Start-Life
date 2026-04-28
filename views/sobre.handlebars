@@ -1,8 +1,6 @@
-<h1>Página Sobre Desenvolvedores</h1>
-<h3>Feito por:</h3>
+<h1>PAGINA SOBRE</h1>
 
-{{#if id}}
-    <p class="id-display">{{id}}</p>
-{{else}}
-    <p class="no-id">Thalles e Marcio</p>
-{{/if}}
+<form action="/sobre" method="POST">
+    <input type="text" name="user_name" placeholder="Digite seu nome">
+    <button type="submit">Enviar</button>
+</form>
