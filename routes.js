@@ -1,18 +1,19 @@
-const express = require("express")
+const express = require('express')
 const router = express.Router()
+const mainController = require('./controllers/mainController')
 
-router.get("/", (req, res) => {
-    res.render('index')
+router.get('/', mainController.main)
+
+router.get('/index2', (req, res) => {
+    res.render('index2')
 })
-router.get("/index2", (req, res) => {
-    res.render("index2")
-})    
 
-router.get("/sobre/:id", (req, res) => {
+router.get('/sobre', mainController.sobre)
+router.post('/sobre', mainController.sobrePost)
 
+router.get('/sobre/:id', (req, res) => {
     const id = req.params.id
-    
-    res.render("sobre", { id })
+    res.render('sobre', { id })
 })
 
 module.exports = router

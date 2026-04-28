@@ -1,1 +1,9 @@
-<h1>{{nome}}</h1>
+<h1>Perfil</h1>
+
+{{#if nome}}
+    <p>Olá, <strong>{{nome}}</strong>! Bem-vindo(a) ao seu perfil.</p>
+{{else}}
+    <p>Nenhum nome informado.</p>
+{{/if}}
+
+<a class="btn" href="/sobre">← Voltar</a>
