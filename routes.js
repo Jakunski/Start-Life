@@ -16,4 +16,6 @@ router.get('/sobre/:id', (req, res) => {
     res.render('sobre', { id })
 })
 
+router.post('/name', mainController.namePost)
+
 module.exports = router
