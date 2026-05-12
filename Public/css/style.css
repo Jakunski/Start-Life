@@ -142,3 +142,14 @@ a:hover {
     color: #666699;
     margin-top: 10px;
 }
+
+.teste {
+    color: chocolate;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    gap: 15px;
+}

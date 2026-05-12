@@ -21,6 +21,11 @@ exports.sobrePost = async (req, res) => {
 
     const resposta = await fetch(`https://viacep.com.br/ws/${cepDigitado}/json/`)
     
+//Aula 3 Status
+if (resposta.status != 200) {
+        return res.redirect("/sobre")
+    }
+
     const body = await resposta.json()
 
     const { cep, logradouro, bairro } = body

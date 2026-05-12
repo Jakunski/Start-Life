@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const mainController = require('./controllers/mainController')
+const userController = require('./controllers/userController')
 
 router.get('/', mainController.main)
 
@@ -15,6 +16,9 @@ router.get('/sobre/:id', (req, res) => {
     const id = req.params.id
     res.render('sobre', { id })
 })
+
+// Aula 3
+router.post("/registrar", userController.registrar)
 
 router.post('/name', mainController.namePost)
 
